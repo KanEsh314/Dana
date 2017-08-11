@@ -12,10 +12,39 @@
 </ion-header>
 <ion-content class="camp">
 
-  <ion-card>
+  <ion-card (click)="Detail()">
     <img src="assets/Camp1.jpg"/>
-    <div class="card-title">Say No To Cancer</div>
-    <div class="card-subtitle">Stay Positive</div>
+    <ion-card-content>
+      <ion-card-title>
+        No Cancer
+      </ion-card-title>
+      <ion-card-subtitle>
+      <p>
+        The Most Worst Part In Life
+      </p> 
+      </ion-card-subtitle>
+    </ion-card-content>
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="danger" icon-start>
+        <ion-icon name='chatbubbles'></ion-icon>
+          Comment
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button clear small color="danger" icon-start>
+        <ion-icon name='eye'></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col text-right>
+        <button ion-button clear small color="danger" icon-start>
+        <ion-icon name='share-alt'></ion-icon>
+          Share
+        </button>
+      </ion-col>
+    </ion-row>
   </ion-card>
-
+  <button ion-button text-left>
+    Derma
+  </button>
 </ion-content>

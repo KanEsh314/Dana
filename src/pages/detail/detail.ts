@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { DetailPage } from '../detail/detail';
 
 /**
- * Generated class for the CampaignPage page.
+ * Generated class for the DetailPage page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
@@ -11,22 +10,16 @@ import { DetailPage } from '../detail/detail';
 
 @IonicPage()
 @Component({
-  selector: 'page-campaign',
-  templateUrl: 'campaign.html',
+  selector: 'page-detail',
+  templateUrl: 'detail.html',
 })
-export class CampaignPage {
+export class DetailPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-
-  }
-
-  Detail()
-  {
-  	this.navCtrl.push(DetailPage);
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad CampaignPage');
+    console.log('ionViewDidLoad DetailPage');
   }
 
 }

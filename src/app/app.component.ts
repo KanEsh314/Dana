@@ -13,7 +13,7 @@ import { CampaignPage } from '../pages/campaign/campaign';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = CampaignPage;
 
   pages: Array<{title: string, component: any}>;
 
