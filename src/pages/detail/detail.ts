@@ -1,25 +1,25 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController } from 'ionic-angular';
 
 /**
- * Generated class for the DetailPage page.
+ * Generated class for the DetailPage tabs.
  *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
+ * See https://angular.io/docs/ts/latest/guide/dependency-injection.html for
+ * more info on providers and Angular DI.
  */
 
 @IonicPage()
 @Component({
   selector: 'page-detail',
-  templateUrl: 'detail.html',
+  templateUrl: 'detail.html'
 })
 export class DetailPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  overviewRoot = 'OverviewPage'
+  commentRoot = 'CommentPage'
+  currentRoot = 'CurrentPage'
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad DetailPage');
-  }
+
+  constructor(public navCtrl: NavController) {}
 
 }
